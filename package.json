@@ -2,14 +2,17 @@
   "name": "node",
   "version": "1.0.0",
   "description": "",
-  "main": "feefo.mts",
+  "main": "dist/feefo.js",
+  "type": "commonjs",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "generate-csv": "node dist/feefo.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.3.1",
     "fs": "^0.0.1-security"
   },
   "devDependencies": {

@@ -2,9 +2,10 @@
     "extends": "@tsconfig/node-lts/tsconfig.json",
     "compilerOptions": {
         "lib": ["DOM"],
-        "module": "NodeNext"
+        "module": "NodeNext",
+        "outDir": "dist"
     },
-    "include": ["src/feefo.ts"],
+    "include": ["src/feefo.ts", "process-env.d.ts"],
     "exclude": ["node_modules"]
   }
   
