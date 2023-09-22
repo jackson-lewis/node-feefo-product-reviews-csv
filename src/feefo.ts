@@ -11,7 +11,7 @@ type FeefoProductReview = {
 
 const PAGE_SIZE = 100
 
-async function getFeefoProductReviews(page: number = 1): Promise<FeefoProductReview[] | []>  {
+async function getFeefoProductReviews(page: number = 1): Promise<FeefoProductReview[]>  {
     const url = new URL('https://api.feefo.com/api/11/products/ratings')
 
     url.searchParams.set('merchant_identifier', process.env.FEEFO_MERCHANT_IDENTIFIER)
