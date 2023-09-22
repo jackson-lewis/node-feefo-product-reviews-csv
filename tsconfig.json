@@ -1,0 +1,10 @@
+{
+    "extends": "@tsconfig/node-lts/tsconfig.json",
+    "compilerOptions": {
+        "lib": ["DOM"],
+        "module": "NodeNext"
+    },
+    "include": ["src/feefo.ts"],
+    "exclude": ["node_modules"]
+  }
+  
